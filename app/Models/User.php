@@ -9,9 +9,6 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
-    /**
-     * @phpstan-ignore-next-line
-     */
     use HasFactory;
     use Notifiable;
 
