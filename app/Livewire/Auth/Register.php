@@ -37,5 +37,7 @@ class Register extends Component
         ]);
 
         auth()->login($user);
+
+        redirect()->route('home');
     }
 }

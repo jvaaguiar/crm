@@ -20,6 +20,8 @@ it('should register a user', function () {
         ->call('submit')
         ->assertHasNoErrors();
 
+    redirect()->route('home');
+
     assertDatabaseHas('users', [
         'name'  => 'John Doe',
         'email' => 'john@doe.com',
